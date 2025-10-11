@@ -1,104 +1,86 @@
 export function footer(){
-    return `<p>Calorie Statement</p>
-    <p>
-      2,000 calories a day is used for general nutrition advice, but calorie
-      needs vary. Additional nutrition information available upon request
-      in-store and on kfc.com. Prices, participation, and product availability
-      may vary.
-    </p>
-    <p>
-      Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Sierra Mist are
-      registered trademarks of PepsiCo, Inc. Dr Pepper is a registered
-      trademark of Dr Pepper/Seven Up, Inc.
-    </p>
-    <!-- kfc logo  -->
-    <div class="footer"></div>
-    <img
-      src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
-      class="logo"
-      alt="kfc-logo"
-    />
-    <!-- footer contents -->
-    <table>
-      <tr>
-        <td>KFC Food</td>
-        <td>Support</td>
-        <td>Legal</td>
-        <td>KFC India</td>
-      </tr>
+    const pathPrefix = window.location.pathname.includes("/pages/")
+      ? "../components/Images/"
+      : "./components/Images/";
+    return `<div class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img
+          src="${pathPrefix}60gye-logo.svg"
+          class="logo"
+          alt="60계 치킨 로고"
+        />
+        <div>
+          <p class="brand-name">60계 치킨 대전 관평점</p>
+          <p>대표 : 관평점주 김치킨 ｜ 사업자등록번호 : 123-45-67890</p>
+          <p>대전광역시 유성구 관평동 887-3 1층 ｜ 매장번호 042-931-5222</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>브랜드</h4>
+          <a href="#store">브랜드 스토리</a>
+          <a href="#menu">메뉴 소개</a>
+          <a href="#benefit">이벤트</a>
+        </div>
+        <div>
+          <h4>고객 지원</h4>
+          <a href="">자주 묻는 질문</a>
+          <a href="">고객센터</a>
+          <a href="">매장 찾기</a>
+        </div>
+        <div>
+          <h4>정책 안내</h4>
+          <a href="">이용약관</a>
+          <a href="">개인정보 처리방침</a>
+          <a href="">영상정보처리기기 운영방침</a>
+        </div>
+        <div>
+          <h4>가맹 안내</h4>
+          <a href="">가맹 문의</a>
+          <a href="">상담 신청</a>
+          <a href="">제휴 제안</a>
+        </div>
+      </div>
+    </div>
 
-      <tr>
-        <td>Menu</td>
-        <td>Get Help</td>
-        <td>Terms and Conditions</td>
-        <td>About KFC</td>
-      </tr>
-
-      <tr>
-        <td>Order Lookup</td>
-        <td>Contact Us</td>
-        <td>Privacy Policy</td>
-        <td>KFC Care</td>
-      </tr>
-
-      <tr>
-        <td>Gift Card</td>
-        <td>KFC Feedback</td>
-        <td>Disclaimer</td>
-        <td>Careers</td>
-      </tr>
-
-      <tr>
-        <td>Nutrition Allergen</td>
-        <td>Privacy Policy</td>
-        <td>Caution Notice</td>
-        <td>Our Golden Past</td>
-      </tr>
-    </table>
-
-    <section class="location">
-      <img
-        class="location-logo"
-        src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg"
-        alt=""
-      />
-      <a href="">Find a KFC</a>
-    </section>
-
-    <!-- play store link  -->
-    <section class="play-store">
-      <img
-        src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
-        alt="Google play"
-      />
-      <img
-        src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
-        alt="apple store"
-      />
-    </section>
+    <div class="footer-bottom">
+      <div class="store-apps">
+        <p>60계 치킨 앱 다운로드</p>
+        <div class="app-badges">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Google Play"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Download_on_the_App_Store_Badge_KR_RGB_blk.svg"
+            alt="App Store"
+          />
+        </div>
+      </div>
+      <div class="socialmedia-links">
+        <a href="https://www.instagram.com">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="instagram"
+        /></a>
+        <a href="https://www.facebook.com">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="facebook"
+        /></a>
+        <a href="https://pf.kakao.com">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5c/KakaoTalk_logo.svg"
+            alt="kakaotalk"
+        /></a>
+      </div>
+    </div>
 
     <p class="copyright">
-      Copyright © KFC Corporation 2021 All Rights Reserved
+      COPYRIGHT © 2024 60GYE CHICKEN. ALL RIGHTS RESERVED.
     </p>
-
-    <!-- Social media link  -->
-    <div class="socialmedia-links">
-      <a href="https://www.instagram.com">
-        <img
-          src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg"
-          alt="instagram"
-      /></a>
-      <a href="https://www.facebook.com">
-        <img
-          src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg"
-          alt="facebook"
-      /></a>
-      <a href="https://www.twitter.com">
-        <img
-          src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg"
-          alt="twitter"
-      /></a>
-    </div>`
+  </div>`
 }
 
 document.querySelector(".footer-div").innerHTML = footer();

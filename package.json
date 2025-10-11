@@ -1,0 +1,13 @@
+{
+  "name": "60daejong-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "60계 치킨 대전 관평점 웹사이트 로컬 미리보기 서버",
+  "scripts": {
+    "start": "node server.js",
+    "share": "node share.js"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}
