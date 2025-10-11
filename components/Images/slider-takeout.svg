@@ -1,0 +1,17 @@
+<svg width="1440" height="396" viewBox="0 0 1440 396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="takeoutGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3c4" />
+      <stop offset="100%" stop-color="#ffe08a" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="396" fill="url(#takeoutGradient)" rx="28" />
+  <text x="120" y="150" font-family="'Noto Sans KR', sans-serif" font-size="58" font-weight="800" fill="#222">매장 포장으로 더욱 빠르게</text>
+  <text x="120" y="210" font-family="'Noto Sans KR', sans-serif" font-size="26" fill="#444">예약하고 방문하면 줄 서지 않고 픽업 완료!</text>
+  <text x="120" y="260" font-family="'Noto Sans KR', sans-serif" font-size="24" fill="#444">퇴근길 포장 할인 · 전용 픽업존 운영</text>
+  <g transform="translate(1020,110)">
+    <rect x="0" y="0" width="280" height="200" rx="30" fill="#ffffff" opacity="0.8" />
+    <text x="140" y="90" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="32" font-weight="700" fill="#ec1c24">포장 예약</text>
+    <text x="140" y="140" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="20" fill="#666">최소 15분 전 예약 추천</text>
+  </g>
+</svg>
