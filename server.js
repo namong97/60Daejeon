@@ -59,33 +59,12 @@ function sendFile(res, filePath) {
   stream.pipe(res);
 }
 
-function resolveFilePath(safePath) {
-  const relativePath = safePath.startsWith('/') ? safePath.slice(1) : safePath;
-  return path.join(ROOT_DIR, relativePath);
-}
-
 const server = http.createServer((req, res) => {
   const safePath = getSafePath(req.url);
-  const requestedFile = resolveFilePath(safePath);
+  const requestedFile = path.join(ROOT_DIR, safePath);
 
   fs.stat(requestedFile, (err, stats) => {
     if (err) {
-      const shouldFallbackToIndex = !path.extname(safePath) || safePath === '/index.html';
-
-      if (shouldFallbackToIndex) {
-        const indexFile = resolveFilePath('/index.html');
-        fs.stat(indexFile, (indexErr) => {
-          if (indexErr) {
-            res.writeHead(500, { 'Content-Type': 'text/plain; charset=UTF-8' });
-            res.end('홈페이지 파일을 불러오는 중 오류가 발생했습니다.');
-            return;
-          }
-
-          sendFile(res, indexFile);
-        });
-        return;
-      }
-
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
       res.end('요청하신 페이지를 찾을 수 없습니다.');
       return;
