@@ -2,7 +2,11 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+ codex/translate-site-content-to-korean-rwtk72
 const DEFAULT_PORT = process.env.PORT || 5173;
+
+const DEFAULT_PORT = process.env.PORT || 4173;
+ main
 const DEFAULT_HOST = '0.0.0.0';
 const ROOT_DIR = path.join(__dirname);
 
@@ -59,6 +63,7 @@ function sendFile(res, filePath) {
   stream.pipe(res);
 }
 
+ codex/translate-site-content-to-korean-rwtk72
 function resolveFilePath(safePath) {
   const relativePath = safePath.startsWith('/') ? safePath.slice(1) : safePath;
   return path.join(ROOT_DIR, relativePath);
@@ -86,6 +91,14 @@ const server = http.createServer((req, res) => {
         return;
       }
 
+
+const server = http.createServer((req, res) => {
+  const safePath = getSafePath(req.url);
+  const requestedFile = path.join(ROOT_DIR, safePath);
+
+  fs.stat(requestedFile, (err, stats) => {
+    if (err) {
+ main
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
       res.end('요청하신 페이지를 찾을 수 없습니다.');
       return;
