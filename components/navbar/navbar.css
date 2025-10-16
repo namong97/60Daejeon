@@ -5,18 +5,18 @@ body{
 .navbar{
     position:fixed;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     background-color: white;
     width: 100%;
-    padding: 25px 11% 25px 6%;
+    padding: 24px 11% 24px 6%;
     box-sizing: border-box;
     height: 103px;
-    font-family: sans-serif;
-    font-weight: 550;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
     z-index: 10;
-    font-size: .85rem;
+    font-size: .9rem;
     margin-bottom: 100px;
-    top: 0;   
+    top: 0;
 }
 
 .nav-checkbtn{
@@ -32,7 +32,7 @@ body{
     height: 52px;
     justify-content: space-around;
     align-items: center;
-    width: 35%;
+    width: 38%;
 }
 
 .navbar-left *{
@@ -44,9 +44,9 @@ body{
 
 .navbar-right{
     display: flex;
-    width: 20%;
+    width: 24%;
     justify-content: space-around;
-    align-items: center;   
+    align-items: center;
 }
 .navbar-right *{
     margin: 0;
@@ -62,8 +62,8 @@ body{
 
 .account{
     border-right: 1px solid rgb(175, 175, 175);
-    padding-right: 10px;
-    height: 17px;
+    padding-right: 12px;
+    height: 19px;
 }
 
 .sample-body{
@@ -89,7 +89,7 @@ body{
     .navbar-left{
         justify-content: space-between;
         align-items: center;
-        width: 56%;
+        width: 60%;
     }
 
     .navbar-left>img{

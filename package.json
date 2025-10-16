@@ -1,0 +1,15 @@
+{
+  "name": "60gye-gwanpyeong-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static preview server for the 60Gye Chicken Daejeon Gwanpyeong site",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "share": "node share.js",
+    "repair": "node scripts/repair-package.js"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}

@@ -1,0 +1,19 @@
+<svg width="1440" height="396" viewBox="0 0 1440 396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="deliveryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec1c24" />
+      <stop offset="50%" stop-color="#f36f38" />
+      <stop offset="100%" stop-color="#ffd166" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="396" fill="url(#deliveryGradient)" rx="28" />
+  <text x="120" y="150" font-family="'Noto Sans KR', sans-serif" font-size="60" font-weight="700" fill="#ffffff">배달로 만나는 60계</text>
+  <text x="120" y="220" font-family="'Noto Sans KR', sans-serif" font-size="28" fill="#fff7ec">지금 주문하면 가장 가까운 매장에서 바로 튀겨 드려요.</text>
+  <text x="120" y="270" font-family="'Noto Sans KR', sans-serif" font-size="24" fill="#fff7ec">대전 전역 배달 가능 · 실시간 위치 추적</text>
+  <circle cx="1160" cy="198" r="120" fill="#ffffff22" />
+  <circle cx="1180" cy="198" r="90" fill="#ffffff33" />
+  <g transform="translate(1060,138)">
+    <rect x="0" y="34" width="220" height="70" rx="35" fill="#ffffff" />
+    <text x="110" y="80" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="26" font-weight="700" fill="#ec1c24">배달 주문</text>
+  </g>
+</svg>
