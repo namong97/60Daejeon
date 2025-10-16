@@ -118,7 +118,6 @@ Clone down this repository using this <a href="https://github.com/AnandRP2030/KF
 6. 원격 저장소에 푸시한 후(PR이 있다면) GitHub에서 새로고침하여 충돌이 해결됐는지 확인합니다.
 
 > rebase 전략을 사용한다면 `git pull --rebase origin main`으로도 동일하게 해결할 수 있습니다. 팀 규칙에 맞는 방식을 사용하세요.
-=======
  main
 <hr/>
 
