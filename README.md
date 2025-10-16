@@ -78,11 +78,30 @@ KFC (Kentucky Fried Chicken) is an American fast food restaurant chain headquart
 <hr/>
 
 ## Installation and Setup Instructions
-Clone down this repository using this <a href="https://github.com/AnandRP2030/KFC-Clone">link</a> 
+Clone down this repository using this <a href="https://github.com/AnandRP2030/KFC-Clone">link</a>
+<hr/>
+
+## Local Preview (Virtual Site Link)
+로컬 환경에서 60계 치킨 대전 관평점 페이지를 "가상 사이트"처럼 확인하려면 아래 단계를 따라 주세요.
+
+1. Node.js가 설치되어 있는지 확인합니다.
+2. 프로젝트 루트에서 `npm run dev` 명령을 실행합니다.
+3. 터미널에 표시되는 `http://localhost:5173` 링크를 열면 실제 사이트처럼 미리보기를 이용할 수 있습니다.
+
+서버는 정적 파일을 제공하므로 `index.html` 뿐 아니라 `pages/` 폴더에 포함된 화면들도 동일한 주소에서 직접 확인할 수 있습니다.
+
+### 외부 공유 링크 만들기
+가상 사이트 링크를 다른 사람과 즉시 공유하고 싶다면 다음 절차를 따르세요.
+
+1. `npm install` 명령으로 의존성을 설치합니다(최초 1회).
+2. `npm run share` 명령을 실행하면 터미널에 "👉 https://...." 형태의 임시 링크가 생성됩니다.
+3. 링크는 실행 중인 터미널이 열려 있는 동안만 유효하며, Ctrl+C로 종료하면 자동으로 만료됩니다.
+
+> 공유 링크는 [localtunnel](https://github.com/localtunnel/localtunnel) 서비스를 사용하므로, 회사 네트워크 정책에 따라 접속이 제한될 수 있습니다.
 <hr/>
 
 ## See Live
-Visit the Deployed version using this <a href="https://my-kfc-clone3.netlify.app/">link</a>  
+Visit the Deployed version using this <a href="https://my-kfc-clone3.netlify.app/">link</a>
 <hr/>
 
 ## Team Members and Contributors

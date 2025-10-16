@@ -1,0 +1,10 @@
+<svg width="360" height="320" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="320" rx="32" fill="#f0f4ff" />
+  <g transform="translate(40,40)">
+    <rect x="0" y="0" width="280" height="200" rx="28" fill="#ffffff" />
+    <text x="140" y="86" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="26" font-weight="700" fill="#1f3c88">60계 멤버십</text>
+    <text x="140" y="124" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="20" fill="#3f51b5">포인트 적립 · 생일 쿠폰 · 선착순 이벤트</text>
+    <rect x="70" y="150" width="140" height="42" rx="21" fill="#3f51b5" />
+    <text x="140" y="178" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="18" fill="#ffffff">가입하기</text>
+  </g>
+</svg>
