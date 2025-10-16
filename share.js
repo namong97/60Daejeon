@@ -1,7 +1,11 @@
 const localtunnel = require('localtunnel');
 const { startServer } = require('./server');
 
+ codex/translate-site-content-to-korean-rwtk72
 const PORT = Number(process.env.PORT) || 5173;
+
+const PORT = Number(process.env.PORT) || 4173;
+ main
 
 let server;
 
