@@ -4,6 +4,10 @@
   "private": true,
   "description": "60계 치킨 대전 관평점 웹사이트 로컬 미리보기 서버",
   "scripts": {
+ codex/translate-site-content-to-korean-rwtk72
+    "dev": "node server.js",
+=======
+ main
     "start": "node server.js",
     "share": "node share.js"
   },

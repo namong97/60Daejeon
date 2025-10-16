@@ -85,8 +85,14 @@ Clone down this repository using this <a href="https://github.com/AnandRP2030/KF
 로컬 환경에서 60계 치킨 대전 관평점 페이지를 "가상 사이트"처럼 확인하려면 아래 단계를 따라 주세요.
 
 1. Node.js가 설치되어 있는지 확인합니다.
+ codex/translate-site-content-to-korean-rwtk72
+2. 최초 1회 `npm install` 명령을 실행해 필요한 패키지를 설치합니다.
+3. 프로젝트 루트에서 `npm run dev` 명령을 실행합니다.
+4. 터미널에 표시되는 `http://localhost:5173` 링크를 열면 실제 사이트처럼 미리보기를 이용할 수 있습니다.
+
 2. 프로젝트 루트에서 `npm start` 명령을 실행합니다.
 3. 터미널에 표시되는 `http://localhost:4173` 링크를 열면 실제 사이트처럼 미리보기를 이용할 수 있습니다.
+ main
 
 서버는 정적 파일을 제공하므로 `index.html` 뿐 아니라 `pages/` 폴더에 포함된 화면들도 동일한 주소에서 직접 확인할 수 있습니다.
 
@@ -98,6 +104,22 @@ Clone down this repository using this <a href="https://github.com/AnandRP2030/KF
 3. 링크는 실행 중인 터미널이 열려 있는 동안만 유효하며, Ctrl+C로 종료하면 자동으로 만료됩니다.
 
 > 공유 링크는 [localtunnel](https://github.com/localtunnel/localtunnel) 서비스를 사용하므로, 회사 네트워크 정책에 따라 접속이 제한될 수 있습니다.
+ codex/translate-site-content-to-korean-rwtk72
+
+### GitHub PR 충돌 해결 가이드
+
+원격 저장소에서 "This branch has conflicts that must be resolved" 메시지가 보이면, 베이스 브랜치(main)와 현재 작업 브랜치 사이에 충돌이 생겼다는 뜻입니다. 아래 순서로 충돌을 해결한 뒤 다시 푸시하세요.
+
+1. 최신 변경 사항을 받아옵니다: `git fetch origin`
+2. 작업 브랜치에서 베이스 브랜치를 병합합니다: `git merge origin/main`
+3. 표기된 파일에서 충돌 표시(`<<<<<<<`, `=======`, `>>>>>>>`)를 제거하고 올바른 내용을 남깁니다.
+4. 수정한 파일을 스테이징합니다: `git add <파일명>`
+5. 충돌 해결 커밋을 만듭니다: `git commit`
+6. 원격 저장소에 푸시한 후(PR이 있다면) GitHub에서 새로고침하여 충돌이 해결됐는지 확인합니다.
+
+> rebase 전략을 사용한다면 `git pull --rebase origin main`으로도 동일하게 해결할 수 있습니다. 팀 규칙에 맞는 방식을 사용하세요.
+=======
+ main
 <hr/>
 
 ## See Live
